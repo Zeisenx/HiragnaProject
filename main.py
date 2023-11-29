@@ -43,6 +43,7 @@ def random_question():
     play_count += 1
 
 def check_answer(player_answer, answer):
+    #hardcore shit, but simple is better for now than complex
     if player_answer == "si" and answer == "shi":
         return True
     if player_answer == "hu" and answer == "fu":
@@ -53,7 +54,6 @@ def check_answer(player_answer, answer):
         return True
     return player_answer == answer
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     while True:
         random_question()
